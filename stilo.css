@@ -1,0 +1,213 @@
+/*@font-face {
+    font-family: 'Ysabeau Office';
+    src: url("font/YsabeauOffice-VariableFont_wght.ttf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@200&display=swap');*/
+*{
+    /* Quitarle los valores por defecto que tienen los navegadores al margen y al relleno */
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Ysabeau Office';*/
+}
+html{
+    /*width: 1280px;*/
+}
+body{
+	/* Establecer fondo al cuerpo */
+    width: 100%;
+	background-color: white;
+}
+
+header{
+    /* Establecer el color y el alto del logo */
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    background-color: #2F4944;
+    border-bottom: 10px #1F3531 solid;
+}
+header>span{
+    /* Cambiar el tamaño de la letra al logo */
+    font-size: 50px;
+}
+.iconos{
+    /* Flotar la imagen y añadirle relleno para separarla del borde, también cambiarle su tamaño */
+    padding:0 10px;
+    float: right;
+    height: 60px;
+}
+#menu{
+    /* Establecer el ancho del menú horizontal, su color y su único borde de abajo. También establezco el contenido en el centro de este */
+    width: 100%;
+    background-color: #132622;
+    border-bottom: 6px solid #091917;
+    text-align: center;
+}
+#menu>ul>li{
+    /* Establezco a los elementos de la lista como elementos de linea y les pongo relleno para separarlos */
+    display: inline;
+    padding: 0 100px;
+}
+#menu>ul>li>a{
+    /* A los enlaces de los apartados les quito la decoración y su color. Tambien les pongo relleno, las cambio a negrita y les cambio el tamaño */
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 0 10px;
+    color: #A7C09E;
+}
+#menu>ul>li>a:hover{
+    /* Cuando el cursor está por encima de los enlaces, les cambia el color del fondo y de la letra */
+    color: #D4E0D0;
+    background-color: #2F4944;
+}
+footer{
+	/* Darle ancho y alto y cambiar el color de fondo y darle borde */
+	width: 100%;
+	height: 35px;
+	background-color: #132622;
+	border-top: 10px #091917 solid;
+}
+/*<><><><> Formulario <><><><>*/
+main{
+    background-color: rgba(125, 177, 119, 0.192)
+}
+#formulario section{
+	padding: 75px 21.875% 30px;
+}
+form{
+	/* Darle relleno al formulario para separar su contenido de los bordes */
+	background-color: rgba(114, 185, 106, 0.295);
+	padding: 50px 4.24% 0;
+	width: 73.19%; /* 538 / 1280 x 100 */
+    border: 1px solid #2F4944;
+    border-radius: 20px;
+    font-size: 30px;
+}
+form>p{
+	padding: 10px 13.64% 5px 9.09%;
+	width: 81.78%; /* 440px / 538px x 100 */
+    margin: 0;
+}
+.checkboxes{
+	padding: 10px 6.41% 40px;
+	width: 88.64%; /* 390 / 440 x 100 */
+    height: 200px;
+    font-size: 20px;
+}
+input[type="text"]{
+	/* Aplicarle margen a los input para separarlos*/
+	display: block;
+	width: 91.18%; /* 310 / 340 x 100 */
+	padding: 5px 4.84%;
+}
+form>p:first-child{
+	background-color: #3ED416;
+}
+form>p:nth-child(2){
+	background-color: #E59B18;
+}
+.checkboxes div:first-child{
+    padding-left: 17.34%;
+    width: 38.18%; /* 200px-30px-2px(border) */
+    height: 200px;
+    float: left;
+    border: 1px solid #29523a;
+}
+.checkboxes div:last-child{
+    padding-left: 30px;
+    width: 33.64%; /* 180px-30px-2px(border) */
+    float: right;
+    height: 200px;
+    border: 1px solid #29523a;
+}
+.checkboxes div:last-child p{
+    margin-bottom: 20px;
+}
+.checkboxes div:first-child p{
+    margin-bottom: 15px;
+}
+.submit{
+    padding: 0 122px 15px 295px;
+    width: 123px; /*440px-122px-295px*/
+}
+input[type=submit]{
+    padding: 2px 3px;
+}
+form>p:first-child, form>p:nth-child(2){
+    background-color: rgba(155, 214, 148, 0.295);
+}
+.checkboxes input[type=checkbox]{
+    margin-left: 40px;
+    display: block;
+}
+/*<><><><> Texto <><><><>*/
+h1{
+    font-size: 50px;
+    padding: 10px;
+}
+#cuerpo{
+    padding: 75px 72px 30px;
+}
+#cuerpo section{
+    padding: 0 20px 0 55px;
+    width: 927px;/* 1002px-20px-55px*/
+}
+#cuerpo div:nth-child(2){
+    padding: 10px 20px;
+    width: 887px; /*927px-20px-20px*/
+    font-size: 30px;
+    background-color: rgba(85, 107, 47, 0.575);
+    border-top: 1px solid #1b3d2d;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#cuerpo div:nth-child(2) div{
+    width: 250px; /* Tamaño de la imagen 250px*250px */
+    height: 250px;
+    float: right;
+}
+.negrita{
+    font-weight: bolder;
+}
+#cuerpo div:nth-child(2) ul{
+    margin: 30px 0 0 60px;
+}
+li{
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-family: 'LineFont';
+}
+li:nth-child(1){
+    color: #E59B18;
+}
+li:nth-child(2){
+    color: rgb(33, 176, 219);
+}
+li:nth-child(3){
+    color: #3ED416;
+}
+#cuerpo div:nth-child(3){
+    padding: 10px 30px 0 50px;
+    width: 845px; /* 927px-30px-50px-2px(border) */
+    border: 1px solid #143f34;
+}
+#cuerpo div:nth-child(3) p{
+    font-size: 30px;
+    height: 170px;
+    padding:0 10px;
+    margin: 10px 0;
+}
+p img{
+    width: 220px;
+    float: right;
+}
+
+@media screen and (max-width:860px) {
+    main{
+        background-color: #4f77ee48;
+    }
+    #formulario section{
+        padding: 75px 10% 30px;
+    }
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel=stylesheet href="stilo.css">
+    </head>
+    <body>
+        <!-- Banner con el logo de la página -->
+        <header>
+            <span>FORMULARIO</span>
+            <!-- Menú para ir a la página del formulario -->
+           <img src="imagenes/inicio.png" alt="Formulario" class="iconos">
+        </header>
+        <!-- Formulario -->
+        <main id="formulario">
+            <section>
+                <form method=post action="formulario.php" id="formulario">
+                    <p>
+                        <label for="nombre">Nombre completo: </label>
+                        <input type=text name="nombre">
+                    </p>
+                    <p>
+                        <label for="ciudad">Ciudad: </label>
+                        <select name="ciudad">
+                            <option value="Badajoz">Badajoz</option> 
+                            <option value="Mérida">Mérida</option>
+                            <option value="Cáceres">Caceres</option>
+                        </select>
+                    </p>
+                        <!-- Radio Button -->
+                    <div class="checkboxes">
+                        <div>
+                            <h3><label for="letra">Letra de la clase.</label></h3>
+                            <p>A:<input type=radio name="letra" value="a"checked></p>
+                            <p>B:<input type=radio name="letra" value="b"></p>
+                            <p>C:<input type=radio name="letra" value="c"></p>
+                            <p>D:<input type=radio name="letra" value="d"></p>
+                        </div>
+                        <div>
+                            <h3><label for="etapa[]">Etapa:</label></h3>
+                            <p>ESO:<input type=checkbox name="etapa[]" value="eso"></p>
+                            <p>Bachillerato:<input type=checkbox name="etapa[]" value="bach"></p>
+                            <p>Ciclo Formativo:<input type=checkbox name="etapa[]" value="ciclo"></p>
+                        </div>
+                    </div>
+                    <p>
+                        ¿Acepta los términos y condiciones de está página? 
+                        <input type=checkbox name="aceptado">
+                    </p>
+                    <p class="submit"><input type=submit></p>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
+</html>
